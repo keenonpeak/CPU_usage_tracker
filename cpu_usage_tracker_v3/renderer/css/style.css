@@ -1,0 +1,115 @@
+:root{
+  --dark-grey: #222831;
+  --light-grey:#393e46;
+  --cyan: #00adb5;
+  --silver: #eeeeee;
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+body {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: 0px;
+  background-color: var(--dark-grey);
+  color: var(--silver);
+}
+html{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: auto;
+}
+.cpu-stats{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.mem-used-stats{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.mem-free-stats{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+h2{
+  text-align: center;
+}
+h3{
+  margin: 60px auto;
+  text-align: center;
+}
+table{
+  margin: auto;
+  width: 100vw;
+}
+tr{
+  margin: auto;
+  width: 100vw;
+}
+#cpuUsageChart{
+  width: 33vw;
+}
+#memUsageChart{
+  width: 33vw;
+}
+#memFreeChart{
+  width: 33vw;
+}
+#cpu-name{
+  text-align: center;
+  margin: 40px 0px 10px 0px;
+  font-size: 30px;
+}
+#CPU-overall-used-container{
+  height: 24px;
+  width: 60vw;
+  margin: 60px auto;
+  border: 1px solid var(--silver);
+  border-radius: 5px;
+}
+#MEM-overall-used-container{
+  height: 24px;
+  width: 60vw;
+  margin: 60px auto;
+  border: 1px solid var(--silver);
+  border-radius: 5px;
+}
+#MEM-overall-free-container{
+  height: 24px;
+  width: 60vw;
+  margin: 60px auto;
+  border: 1px solid var(--silver);
+  border-radius: 5px;
+}
+#overall-cpu-used{
+  height: 100%;
+  width: 10%;
+  border-radius: 5px;
+  background-color: var(--silver);
+}
+#overall-mem-used{
+  height: 100%;
+  width: 10%;
+  border-radius: 5px;
+  background-color: var(--silver);
+}
+#overall-mem-free{
+  height: 100%;
+  width: 10%;
+  border-radius: 5px;
+  background-color: var(--silver);
+}
+#cpuOverloadCount{
+  padding: 15px;
+  color: var(--cyan);
+}

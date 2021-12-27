@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html long="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Usage_tracker_v3</title>
+</head>
+
+<body>
+  <h1 id='cpu-name'>CPU</h1>
+  <h2 id='cores'>Core Count</h2>
+  <div class="cpu-stats">
+    <h3 id='cpu-used'>CPU Usage: 0.0%</h3>
+    <div id="CPU-overall-used-container">
+      <div id="overall-cpu-used"></div>
+    </div>
+  </div>
+  <div class="mem-used-stats">
+    <h3 id='mem-used'>Mem Usage: 0.0%</h3>
+    <div id="MEM-overall-used-container">
+      <div id="overall-mem-used"></div>
+    </div>
+  </div>
+  <div class="mem-free-stats">
+    <h3 id='mem-free'>Mem Free: 0.0%</h3>
+    <div id="MEM-overall-free-container">
+      <div id="overall-mem-free"></div>
+    </div>
+  </div>
+  <table>
+    <tr>
+      <td><canvas id='cpuUsageChart'></canvas></td>
+      <td><canvas id='memUsageChart'></canvas></td>
+      <td><canvas id='memFreeChart'></canvas></td>
+    </tr>
+  </table>
+  <div id="cpuOverloadCount"></div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.4.1/dist/chart.min.js"></script>
+  <script src="./renderer.js"></script>
+</body>
+
+</html>
